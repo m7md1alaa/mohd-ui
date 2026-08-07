@@ -1,0 +1,54 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "mohd-ui",
+  "homepage": "https://mohd-ui.dev",
+  "items": [
+    {
+      "name": "hello-world",
+      "type": "registry:block",
+      "title": "Hello World",
+      "description": "A simple hello world block example.",
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/blocks/hello-world/hello-world.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "A resizable, collapsible sidebar with drag-to-resize, a mobile drawer, and keyboard shortcut toggling.",
+      "registryDependencies": ["button", "separator", "sheet", "tooltip"],
+      "files": [
+        {
+          "path": "src/components/ui/sidebar.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/hooks/use-media-query.ts",
+          "type": "registry:hook"
+        },
+        {
+          "path": "src/hooks/use-shortcut.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "app-sidebar",
+      "type": "registry:block",
+      "title": "App Sidebar",
+      "description": "A worked example composing the sidebar primitive: grouped nav, a collapsed icon rail, a theme toggle, and an account menu. Copy it and swap in your own data.",
+      "registryDependencies": ["sidebar", "button", "dropdown-menu"],
+      "files": [
+        {
+          "path": "registry/blocks/app-sidebar/app-sidebar.tsx",
+          "type": "registry:block"
+        }
+      ]
+    }
+  ]
+}
