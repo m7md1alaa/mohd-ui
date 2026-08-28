@@ -36,6 +36,31 @@
           "type": "registry:block"
         }
       ]
+    },
+    {
+      "name": "toc",
+      "type": "registry:ui",
+      "title": "Table of Contents",
+      "description": "Responsive table of contents with active-heading tracking, animated indicator, mobile dialog, deep links, and RTL support.",
+      "files": [
+        {
+          "path": "src/components/ui/toc.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "toc-demo",
+      "type": "registry:block",
+      "title": "Table of Contents Demo",
+      "description": "A worked example showing the responsive table of contents with document sections.",
+      "registryDependencies": ["toc"],
+      "files": [
+        {
+          "path": "registry/blocks/toc-demo/toc-demo.tsx",
+          "type": "registry:block"
+        }
+      ]
     }
   ]
 }

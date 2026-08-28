@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toc-demo",
+  "title": "Table of Contents Demo",
+  "description": "A worked example showing the responsive table of contents with document sections.",
+  "registryDependencies": [
+    "toc"
+  ],
+  "files": [
+    {
+      "path": "registry/blocks/toc-demo/toc-demo.tsx",
+      "content": "import { Toc, type TocHeading } from \"@/components/ui/toc\";\n\nconst HEADINGS: TocHeading[] = [\n  { id: \"overview\", level: 2, text: \"Overview\" },\n  { id: \"installation\", level: 2, text: \"Installation\" },\n  { id: \"configuration\", level: 3, text: \"Configuration\" },\n  { id: \"accessibility\", level: 2, text: \"Accessibility\" },\n];\n\nexport function TocDemo() {\n  return (\n    <div className=\"relative min-h-[28rem] overflow-hidden rounded-xl border bg-background p-8\">\n      <Toc headings={HEADINGS} />\n      <article className=\"mx-auto max-w-2xl space-y-20\">\n        {HEADINGS.map((heading) => (\n          <section key={heading.id} id={heading.id} className=\"scroll-mt-24 space-y-3\">\n            <h2 className=\"text-2xl font-semibold\">{heading.text}</h2>\n            <p className=\"text-muted-foreground\">A section of content that the table of contents can track and navigate to.</p>\n          </section>\n        ))}\n      </article>\n    </div>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "type": "registry:block"
+}
