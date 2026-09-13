@@ -38,6 +38,27 @@
       ]
     },
     {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "A responsive single/multi-select combobox with creatable items, inline edit/delete actions, and a mobile bottom sheet with keyboard-aware sizing.",
+      "registryDependencies": ["button", "sheet", "tooltip"],
+      "files": [
+        { "path": "src/components/ui/combobox/index.ts", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/types.ts", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/helpers.ts", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/single-combobox.tsx", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/multi-combobox.tsx", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/input-shell.tsx", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/item-visuals.desktop.tsx", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/item-visuals.mobile.tsx", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/responsive-dropdown-shell.tsx", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/use-combobox-interaction.ts", "type": "registry:ui" },
+        { "path": "src/components/ui/combobox/use-visual-viewport.ts", "type": "registry:hook" },
+        { "path": "src/hooks/use-media-query.ts", "type": "registry:hook" }
+      ]
+    },
+    {
       "name": "toc",
       "type": "registry:ui",
       "title": "Table of Contents",
